@@ -1,0 +1,119 @@
+// Variables
+@import "variables";
+
+/**
+ * General styles
+ */
+body{
+	background:#fff;
+}
+/**
+ * Grid Styles
+ */
+.item-grid{
+	/**
+	 * Tab Styles
+	 */
+	.categories-panel{
+		background:#F5F8FA;
+		border-bottom:1px solid rgba(black,0.1);
+		border-top:1px solid rgba(black,0.1);
+		margin-bottom:40px;
+		.tabs{
+			li{
+				display:block;
+				float:left;
+				margin-right:20px;
+				padding:10px 0;
+				a{
+					text-transform: capitalize;
+					color:#333;
+					text-decoration: none;
+				}
+			}
+			.current{
+				border-bottom:1px solid $brand-farmbase;
+				a{
+					color:$brand-farmbase;
+				}
+			}
+		}
+	}
+	/**
+	 * Item Styles
+	 */
+	.item{
+		border:1px solid rgba(black,0.1);
+		.panel-heading{
+			margin-bottom:0;
+			position:relative;
+			padding:0;
+		}
+		.panel-body{
+			padding:5px;
+			padding-right:10px;
+		}
+		.title{
+			font-weight:700;
+			// margin:0;
+		}
+		.location,.price,.author{
+			display:inline;
+
+			i{
+				font-size:18px;
+				margin-right:10px;
+			}
+		}
+		.price{
+			float:right;
+		}
+		.category{
+			background:black;
+			position:absolute;
+			left:0;
+			bottom:-1px;
+			padding:10px auto;
+			border-radius:0;
+		}
+		.panel-footer{
+
+		}
+		.favorite{
+			float:right;
+			padding:0;
+			border:none;
+			margin-top:3px;
+		}
+		.no-image{
+		   text-align:center;
+		   padding-top:40PX;
+			i{
+				font-size:24px;
+			}
+		}
+	}
+}
+/**
+ * Welcome Page Styles
+ */
+#welcome{
+	.main-banner{
+		.container-custom{
+			background:url(../images/tractor.svg),$brand-farmbase;
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-position:60vh;
+			height:80vh;
+			margin-top:5vh;
+			margin-bottom:10vh;
+			.center-box{
+				color:white;
+				.cta-get-started{
+					background:white;
+					text-transform:capitalize
+				}
+			}
+		}
+	}
+}
