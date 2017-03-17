@@ -111,9 +111,72 @@ body{
 				color:white;
 				.cta-get-started{
 					background:white;
-					text-transform:capitalize
+					text-transform:capitalize;
+					color:$brand-farmbase;
 				}
 			}
 		}
 	}
 }
+/**
+ * Form Styles
+ */
+#login_registration{
+	.form-panel{
+		box-shadow:none;
+		border:1px solid rgba(0,0,0,0.2);
+		padding:20px;
+	}
+	.panel-heading{
+		text-transform:uppercase;
+	}
+	// .input-group{
+	// 	margin-bottom:20px;
+	// }
+	.form-input{
+		border:none;
+		border-bottom:1px solid rgba(0,0,0,0.15);
+		box-shadow:none;
+		height:50px;
+	}
+	::placeholder{
+		font-weight:700;
+	}
+	.input-group-addon-custom{
+		background:none;
+		border:none;
+		box-shadow:none;
+		border-bottom:1px solid rgba(0,0,0,0.15);
+	}
+	.check{
+		border:none;
+		color:$brand-farmbase;
+	}
+	.not-check{
+		border:none;
+		color:$brand-danger;
+	}
+	button[type="submit"]{
+		background:$brand-farmbase;
+		color:white;
+		border:1px solid darken($brand-farmbase,20%)
+	}
+}
+
+/**
+ * @mixin box_shadow ($level) {
+
+    @if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    } @else if $level == 2 {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    } @else if $level == 3 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    } @else if $level == 4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    } @else if $level == 5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+}
+ */
