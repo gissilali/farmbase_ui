@@ -60,13 +60,30 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li  class="dropdown-header">
+                                        <div>
+                                            <div class="avatar">
+                                                <span class="initials">{{ substr(Auth::user()->name,0,1) }}</span>
+                                            </div>
+                                            <p >{{ Auth::user()->email }}</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item dropdown-item-custom">
+                                        <a href="#"><i class="fa fa-sliders"></i> 
+                                        Account Settings</a>
+                                    </li>
+                                    <li class="dropdown-item dropdown-item-custom">
+                                        <a href="#"><i class="fa fa-bell"></i> 
+                                        Notifications</a>
+                                    </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                                     <i class="fa fa-power-off"></i>
                                             Logout
                                         </a>
-
+                                     
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
@@ -84,5 +101,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/functions.js') }}"></script>
 </body>
 </html>
